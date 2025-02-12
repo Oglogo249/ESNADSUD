@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="../css/nav.css" rel="stylesheet">
+</head>
+<body>
+    <div class="logo">
+        <a href="#" class="right">
+            <span>E</span>
+            <span>S</span>
+            <span>N</span>
+            <span>A</span>
+            <span>D</span>
+        </a>
+        <button class="left">تسجيل خروج</button>
+        <script>
+          const logoutButton = document.querySelector('.left');
+          logoutButton.addEventListener('click', function() {
+            document.cookie = "session=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            window.location.href = 'index.html'; 
+          });
+        </script>
+        </a>
+    </div>
+    <br/>
+    <br/>
+    <div class="topnav">
+        <a href="home.php">الصفحة الرئيسية</a>
+        <a href="services.php">الخدمات</a>
+        <a href="lows.php">التشريعات والقوانين</a>
+        <a href="about.php">عن البوابة</a>
+    </div>
+</body>
+
+</html>
